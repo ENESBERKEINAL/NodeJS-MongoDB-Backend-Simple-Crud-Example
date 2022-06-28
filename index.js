@@ -1,9 +1,11 @@
 const express = require('express');
 const productsRouter = require("./routes/product");
+const authRouter = require("./routes/auth");
 const mongoose =require("mongoose");
 const bodyparser = require('body-parser');
 require("dotenv/config");
 const cors = require('cors');
+const verifyToken = require('./middleware/verifyToken');
 
 const app = express();
 // Body-parser middleware
@@ -27,9 +29,10 @@ app.get('/',(req,res) => {
     res.send("Hello World")
 })
 
-app.use('/products',productsRouter)
+app.use('/auth', authRouter);
+app.use('/products',verifyToken, productsRouter);
 
 app.listen(5000, ()=> {
-    console.log("Server is running on port 5000")
+    console.log("Server is running on port 5000");
 })
 

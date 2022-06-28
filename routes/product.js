@@ -26,7 +26,8 @@ router.post('/', (req,res)=> {
     const product = new Product({
         name: req.body.name,
         price: req.body.price,
-        description: req.body.description
+        description: req.body.description,
+        user: req.userId,
     })
     product.save();
     res.json(product);
