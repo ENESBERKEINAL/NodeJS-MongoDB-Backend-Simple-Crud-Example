@@ -7,7 +7,7 @@ Simple CRUD example node js project. I used mongoose for cloud db connect on mon
 
 For a setup this project you might add `.env` file  
 
-##.env file
+##### .env file
 * DATABASE_NAME=Your-Database-Name  
 * USERNAME=Your-DB-UserName
 * PASSWORD=Your-DB-Password 
