@@ -1,6 +1,6 @@
 # NodeJS-MongoDB-Backend-Simple-Crud-Example
 
-Simple CRUD example node js project. I used mongoose for cloud db connect on mongoDB.
+Simple CRUD example node js project. I used mongoose for cloud db connect on mongoDB. Authorization with jsonwebtoken.
 
 ## Technologies
 Project is created with:
