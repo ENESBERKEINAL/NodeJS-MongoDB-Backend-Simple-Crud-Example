@@ -17,6 +17,7 @@ For a setup this project you might add `.env` file
 * DATABASE_NAME=Your-Database-Name  
 * USERNAME=Your-DB-UserName
 * PASSWORD=Your-DB-Password 
+* JWT_CODE=Your-randomize-word
 
 with theese fileds. After that
 
